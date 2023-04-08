@@ -1,0 +1,65 @@
+.task-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: hsl(46, 100%, 60%);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #dac390;
+    row-gap: 25px;
+    font-size: 20px;
+}
+
+.task-heading{
+    margin: 0;
+}
+
+.form-label{
+    display: flex;
+    width: 60%;
+    font-weight: bold;
+}
+
+.form-label span{
+    min-width: 157px;
+}
+
+.form-input{
+    padding-bottom: 5px;
+    margin-left: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #000000;
+    flex-grow: 1;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+}
+
+.form-submit{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background: red;
+    color: white;
+    border: 1px solid red;
+    border-radius: 15px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    transition: 0.2s;
+}
+
+.form-submit:hover {
+    background: rgb(255, 100, 100);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+}

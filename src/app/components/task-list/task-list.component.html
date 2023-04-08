@@ -1,0 +1,26 @@
+<ul class="task-list">
+  <li
+    class="task-item"
+    [ngClass]="task.isCompleted ? 'completed' : null"
+    *ngFor="let task of tasks; let i = index"
+  >
+    <div class="task-clickable" (click)="taskClickHandler(task.id)">
+      <div class="task-number">
+        <span class="index-number">{{ i }}</span>
+      </div>
+
+      <div class="task">
+        <h4>{{ task.name }}</h4>
+        <p *ngIf="task.description.trim()">
+          {{ task.description }}
+        </p>
+      </div>
+    </div>
+
+    <div class="task-btn">
+      <button class="task-delete-btn" (click)="deleteClickHandler(task.id)">
+        Delete
+      </button>
+    </div>
+  </li>
+</ul>

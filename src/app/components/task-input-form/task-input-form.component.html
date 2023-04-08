@@ -1,0 +1,32 @@
+<form class="task-form" (submit)="submitHandler($event)">
+  <h2 class="task-heading">Add new task</h2>
+
+  <label class="form-label" for="name">
+    <span> Task name: </span>
+
+    <input
+      id="name"
+      class="form-input"
+      [(ngModel)]="taskName"
+      type="text"
+      name="name"
+      placeholder="New Task..."
+      required
+    />
+  </label>
+
+  <label class="form-label" for="description">
+    <span> Task description: </span>
+
+    <textarea
+      id="description"
+      class="form-input"
+      [(ngModel)]="taskDescription"
+      type="text"
+      name="description"
+      placeholder="Task description"
+    ></textarea>
+  </label>
+
+  <input class="form-submit" type="submit" value="Add task" />
+</form>
